@@ -1,22 +1,10 @@
 from random import*
 from keyboard import*
-#пример с ботами
-def start():
-	"""Teeme valik kellega mängima
-	tagastame m muutja int formaadis
-	
-	:rtype: int
-	"""
-	print("kivi, käärid, paber")
-	m=3
-	while m not in [1,2]:
-		try:
-			m=int(input("Kellega mängimine?\n1-botid \n2-robotiga"))
-		except:
-			ValueError
-	return m
+from ourmodul import*
 v1=["Kivi","Käärid","Paber"]
 v2=["Kivi","Käärid","Paber"]
+
+m=start()
 if m==1:
 	while True:
 		print("kas mängime? q - välja, enter - mängimine")
