@@ -50,21 +50,28 @@ def human_vs_human():
 		elif read_key()=="enter":
 			print(" Камень >> r","\n","Ножницы >> s","\n","Бумага >> p")
 			print("Игрок 1. Выберите камень, ножницы или бумага")
-			if read_key()=="r":
-				ans=1
-			elif read_key()=="s":
-				ans=2
-			elif read_key()=="p":
-				ans=3
+			while True:
+				if read_key()=="r":
+					ans=1
+					break
+				elif read_key()=="s":
+					ans=2
+					break
+				elif read_key()=="p":
+					ans=3
+					break
 			print("Игрок 2. Выберите камень, ножницы или бумага")
 			print(" Камень >> r","\n","Ножницы >> s","\n","Бумага >> p")
-			if read_key()=="r":
-				a=1
-			elif read_key()=="s":
-				a=2
-			elif read_key()=="p":
-				a=3
-			
+			while True:
+				if read_key()=="r":
+					a=1
+					break
+				elif read_key()=="s":
+					a=2
+					break
+				elif read_key()=="p":
+					a=3
+					break
 			if int(a)==1 and int(ans)==1:
 				win="ничья"
 				fair+=1
