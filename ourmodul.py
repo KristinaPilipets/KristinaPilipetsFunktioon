@@ -72,6 +72,7 @@ def human_vs_human():
 				elif read_key()=="p":
 					a=3
 					break
+
 			if int(a)==1 and int(ans)==1:
 				win="ничья"
 				fair+=1
